@@ -1,0 +1,22 @@
+.productbox{
+    position:relative;
+    float:left;
+    /* width:150px; */
+    height:500px;
+    /* margin:5px; */
+}
+.productInside{
+    /* background:green; */
+    position:absolute;
+    
+    /* width:150px;
+    height:150px; */
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+}
+.productInside:hover{
+    z-index:100;
+    /* width:250px; */
+    height:250px;
+    background:#666666;
+}
