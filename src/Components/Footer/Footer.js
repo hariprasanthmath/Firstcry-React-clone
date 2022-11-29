@@ -23,9 +23,11 @@ const Footer = () => {
     return (
         <Box>
            <Box bg='orange' padding={2} >
-              <Text w={{sm:'95%',md:'70%',lg:'70%' }} margin='auto' textAlign='center' fontSize='20px' color='white' padding={2}  >
+           <Box bg='white' margin={4}>
+              <Text  margin='auto' textAlign='center' fontSize='20px' color='orange' padding={2}  >
              big store for little ones
               </Text>
+              </Box>
            </Box>
            <Box  bg='rgb(135,206,250)' p={{ base:'4',sm:'4',md:'10', lg:'10' }} display={ { base:'block',sm:'block',md:'block',lg:'flex' } }gap={10} width='100%' >
               <Box width={{ base:'100%', sm:'100%', md:'50%' ,lg:"30%" }} >
@@ -122,16 +124,6 @@ const Footer = () => {
                  </Box>
               </Box>
               
-              
-                 <Text textAlign='left' fontWeight='bold' >SHOP INTERNATIONAL</Text>
-                    <Box borderLeft='1px solid' borderColor='lightgrey' textAlign='left' >
-                    <Stack>
-                    <Text>FirstCry UAE</Text>
-                    <Text>FirstCry KSA</Text>
-                    <Text>FirstCry KSA(English)</Text>
-                    <Text>FirstCry Arabia: Shopping & Parenting iOS</Text>
-                    </Stack>
-                    </Box>
                     
                  
               </Box>
