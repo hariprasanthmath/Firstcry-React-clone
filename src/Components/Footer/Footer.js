@@ -11,6 +11,7 @@ import { Box,Button,Grid,GridItem,Image,Img,Input,Stack,Tab,TabList,TabPanel,Tab
 import emailjs from 'emailjs-com'
 import { useState } from "react";
 
+
 const initState={
    user_email:""
 }
@@ -18,18 +19,48 @@ const initState={
 const Footer = () => {
    const [email,setMail]=useState(initState);
 
-    console.log(email);
-
-    return (
+       return (
         <Box>
            <Box bg='orange' padding={2} >
            <Box bg='white' margin={4}>
-              <Text  margin='auto' textAlign='center' fontSize='20px' color='orange' padding={2}  >
+              <Text  textAlign='center' fontSize='20px' color='orange' padding={2}   >
              big store for little ones
               </Text>
               </Box>
            </Box>
-           <Box  bg='rgb(135,206,250)' p={{ base:'4',sm:'4',md:'10', lg:'10' }} display={ { base:'block',sm:'block',md:'block',lg:'flex' } }gap={10} width='100%' >
+          <Box display='flex' width='100%' >
+           <Box>
+           <Text  textAlign='center' fontsize='11px'  bg='rgb(135,206,250)' padding={10} width='100%'>
+           2lakh + Unique Products</Text>
+           </Box>
+
+           <Box>
+           <Text  textAlign='center' fontsize='11px'  bg='rgb(135,206,250)' padding={10}>
+           5800 Brands</Text>
+           </Box>
+
+           <Box>
+           <Text  textAlign='center' fontsize='11px' bg='rgb(135,206,250)' padding={10}>
+           7.5 Million
+          Registered Users</Text>
+           </Box>
+
+           <Box>
+           <Text  textAlign='center' fontsize='11px'  bg='rgb(135,206,250)' padding={10}>
+           Easy return Replacement and Exchange policy </Text>
+           </Box>
+
+          
+           <Box>
+           <Text  textAlign='center' fontsize='11px' bg='rgb(135,206,250)' padding={10} width='100%'>
+            Free Shipping Available </Text>
+           </Box>
+           </Box>
+          
+           
+         
+
+           <Box  bg='rgb(135,206,250)' p={{ base:'4',sm:'4',md:'10',lg:'10' }} display={ { base:'block',sm:'block',md:'block',lg:'flex' } } gap={10} width='100%' >
               <Box width={{ base:'100%', sm:'100%', md:'50%' ,lg:"30%" }} >
                     <Image width='70%' src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png"></Image>
                    <Image padding={4} src="https://cdn.fcglcdn.com/brainbees/images/intellitots-franchise-footer-banner.webp"></Image>
@@ -73,7 +104,7 @@ const Footer = () => {
                  </GridItem>
                  <GridItem >
                  <Text textAlign='left'  fontWeight='bold'  >SHIPPING & POLICIES</Text>
-                    <Box mt={4} borderRight='1px solid ' borderColor='lightgrey' textAlign='left' >
+                    <Box mt={4} borderRight='1px solid' borderColor='lightgrey' textAlign='left' >
                      <Stack> 
                     <Text>Payments</Text>
                     <Text>Shipping Policy</Text>   
@@ -86,7 +117,7 @@ const Footer = () => {
                  </GridItem>
                  <GridItem>
                  <Text textAlign='left' fontWeight='bold' >OUR APPS</Text>
-                    <Box mt={4}  borderColor='lightgrey' textAlign='left'>
+                    <Box mt={4}  borderRight='1px solid' borderColor='lightgrey' textAlign='left'>
                      <Stack>
                        <Text>FistCry India: Shopping & Parenting</Text>
                        <Text>FirstCry India: Shopping 
@@ -96,7 +127,7 @@ const Footer = () => {
                  </GridItem>
                  <GridItem>
                  <Text textAlign='left' fontWeight='bold' >SHOP INTERNATIONAL</Text>
-                    <Box mt={4} borderLeft='1px solid' borderColor='lightgrey' textAlign='left' >
+                    <Box mt={4} borderColor='lightgrey' textAlign='left' >
                     <Stack>
                     <Text>FirstCry UAE</Text>
                     <Text>FirstCry KSA</Text>
@@ -115,8 +146,8 @@ const Footer = () => {
              <Text padding={3}   ><FaYoutube fontSize='30px'  /> </Text> 
              <Text padding={3}   ><FaLinkedinIn fontSize='30px'  /></Text> 
            </Box>
-           <Box p={2} display={{ base:'block' , sm:'block', md:'flex' ,lg:'flex'  }} justifyContent='space-between' borderBottom='1px solid lightgrey' width='100%' >
-              <Box width={{ base:'100%' , sm:'100%' ,md:'40%', lg:'30%' }} >
+           <Box  justifyContent='space-between' borderBottom='1px solid lightgrey' width='100%' >
+              <Box width='100%'   display='flex' border='1px solid lightgrey' bg='rgba(135,206,250)' >
                  <Text  textAlign='left' fontWeight='bold'>Download The App</Text>
                  <Box display='flex' >
                    <Img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293" alt="" />
@@ -124,13 +155,32 @@ const Footer = () => {
                  </Box>
               </Box>
               
+              <Text  p={3} bg='rgba(135,206,250)' fontSize='12px'  fontWeight='bold'>Newborn & Baby Products Online Shopping in India</Text>
+                    <Text  bg='rgba(135,206,250)' fontSize='12px'>Along with all your affection and attention, your little bundle of joy deserves the best 
+                    when it comes to newborn & baby items. Pamper your lil' one with the widest range of newborn & baby products:
+                     right from diapers to potty chairs, onesies to party wear, booties to clogs, carry-cots to baby walkers,
+                     rattles to learning toys, FirstCry has it all! FirstCry newborn baby shopping checklist.</Text>
                     
-                 
+            <Text  p={3} bg='rgba(135,206,250)' fontWeight='bold' fontSize='12px'>Online Shopping for Kids at FirstCry.com</Text>
+            <Text bg='rgba(135,206,250)' fontSize='12px'>Shopping for your kid is no child's play and thus we help you explore, 
+            choose and buy from an exhaustive & finest collection of kids' products. FirstCry buying guides, premium store, boutiques,
+             products checklist, and look-books are all aimed towards an enriching and a 
+            fulfilling shopping experience. That's what makes us your go-to online store for kids shopping.</Text>
+
+            <Text  p={3} bg='rgba(135,206,250)' fontWeight='bold' fontSize='12px'>FirstCry India Offers</Text>
+            <Text bg='rgba(135,206,250)' fontSize='12px'>Satisfaction and Savings come guaranteed with irresistible FirstCry offers & deals on a range of high quality products. 
+            These are including but not limited to the FirstCry shopping carnivals, loyalty cash program, app offers, bank & wallet offers, Free @ Three, cashback, Guaranteed savings offers & more.
+
+            To start with, why not grab some great discounts with the FirstCry coupons and buy baby & kids products online from anywhere in India with Free Shipping, Cash On Delivery (COD), Same & Next day delivery & EZ returns options. Happy Shopping!
+            © 2010-2022  www.FirstCry.com. 
+            All rights reserved. This website can be best viewed in resolution width of 1024 and above.
+            </Text>
               </Box>
-           </Box>
+              </Box>
+           
           
         
      );
-  };
+};
   
   export default Footer;
