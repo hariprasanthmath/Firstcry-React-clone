@@ -10,6 +10,8 @@ import { EditCartdata } from '../../reduxstore/action';
 function Extracard(props) {
       const dispatch = useDispatch();
       const cartdata = useSelector((myStore)=>{return myStore.cartdata})
+      /* handleclick function will store the data in redux cart key value*/
+      // It checks wheather the product present or not first
       const handleclick = ()=>{
              var Product_present_cart = false;
              var numberOfCount = 0;
@@ -20,8 +22,10 @@ function Extracard(props) {
                   }
              })
              if(Product_present_cart){
+                  // action to Edit cart value
                   EditCartdata({productDetails:props,count:numberOfCount+1},dispatch);
              }else{
+                  //action to set new product in cart
                   storeClickedItem({productDetails:props,count:1},dispatch);
              }
              
@@ -52,9 +56,7 @@ function Extracard(props) {
                 
                 <hr style={{marginTop:"8px"}}/>
                 <div  style={{marginTop:"8px",height:"18px",width:"18px",borderRadius:"4px",backgroundColor:"#"+props.color}}></div>
-                {/* <div style={{display:"block"}}><Button colorScheme='orange' size='md'>
-                        Add to cart
-                </Button></div> */}
+                
                 <Box
                    display='flex'
                    alignItems='left'
