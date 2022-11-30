@@ -15,7 +15,8 @@ export const productcardtheme = {
         minHeight: "340px",
         boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
         padding: "10px",
-        zIndex: "100",
+        borderRadius: "5px",
+      //   zIndex: "100",
         
       //   position : "relative"
         // backgroundColor: "pink"

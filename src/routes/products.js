@@ -1,16 +1,15 @@
 import React from 'react';
 import Productcard from '../Components/Productcard/Productcard';
+import FilterContainer from '../Components/filterCard/FilterContainer';
+import {Outlet} from 'react-router-dom'
 import "../style/productlistpage.css"
-function products(props) {
+function Products(props) {
     return (
-        <div className='productshow'>
-           <Productcard/>
-           <Productcard/>
-           <Productcard/>
-           <Productcard/>
-           <Productcard/>
+        <div className='productandfiltercontainer'>
+           <FilterContainer/>
+           <div><Outlet/></div>
         </div>
     );
 }
 
-export default products;
+export default Products;
