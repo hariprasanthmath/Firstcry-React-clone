@@ -2,7 +2,8 @@ import React from 'react';
 import { Box, Heading, HStack, Menu, MenuButton, MenuItem, MenuList, Button, Input } from '@chakra-ui/react'
 import {SearchIcon} from '@chakra-ui/icons'
 import {SlHandbag} from 'react-icons/sl'
-
+import {AiOutlineHeart} from 'react-icons/ai'
+import {AiOutlineSearch} from 'react-icons/ai'
 
 
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
       
         <Box>
         
-        <Input borderColor='black'  />
+        <Input borderColor='black'/>
         </Box>
       
         <Menu>
@@ -62,7 +63,7 @@ function Navbar() {
        
       </Box>
         <Box>
-        <Box  fontSize={12}  as={Button}>
+        <Box  fontSize={12} as={Button}><AiOutlineHeart />
           Shortlist
         </Box>
         
@@ -70,9 +71,10 @@ function Navbar() {
         
        
         <Box fontSize={30} height='8%'><SlHandbag /></Box>
-        
+       
         </HStack>
         </Box>
+
         )
       }
 

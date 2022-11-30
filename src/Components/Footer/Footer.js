@@ -28,34 +28,7 @@ const Footer = () => {
               </Text>
               </Box>
            </Box>
-          <Box display='flex' width='100%' >
-           <Box>
-           <Text  textAlign='center' fontsize='11px'  bg='rgb(135,206,250)' padding={10} width='100%'>
-           2lakh + Unique Products</Text>
-           </Box>
-
-           <Box>
-           <Text  textAlign='center' fontsize='11px'  bg='rgb(135,206,250)' padding={10}>
-           5800 Brands</Text>
-           </Box>
-
-           <Box>
-           <Text  textAlign='center' fontsize='11px' bg='rgb(135,206,250)' padding={10}>
-           7.5 Million
-          Registered Users</Text>
-           </Box>
-
-           <Box>
-           <Text  textAlign='center' fontsize='11px'  bg='rgb(135,206,250)' padding={10}>
-           Easy return Replacement and Exchange policy </Text>
-           </Box>
-
           
-           <Box>
-           <Text  textAlign='center' fontsize='11px' bg='rgb(135,206,250)' padding={10} width='100%'>
-            Free Shipping Available </Text>
-           </Box>
-           </Box>
           
            
          
