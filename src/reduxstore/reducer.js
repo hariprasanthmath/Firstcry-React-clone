@@ -1,8 +1,11 @@
 import { ADD } from "./actiontype"
 import { EDIT } from "./actiontype";
+import { ADDBRANDFILTER } from "./actiontype";
+import { AddorDeleteFilter } from "../Functions/AddorDeleteFilter";
 const initialstate = {
     productdata:[],
     cartdata :[],
+    brandfilter : [ ],
 }
 
 export default function reducer(state = initialstate, action){
@@ -22,6 +25,11 @@ export default function reducer(state = initialstate, action){
 
                     return productcart;
                 })
+            };
+            case ADDBRANDFILTER : 
+            return {
+                ...state,
+                brandfilter :  AddorDeleteFilter(state.brandfilter,action.payload),
             }
           default :
           return state;
