@@ -2,6 +2,7 @@ import { ADD } from "./actiontype"
 import { EDIT } from "./actiontype";
 import { ADDBRANDFILTER } from "./actiontype";
 import { ADDGENDERFILTER } from "./actiontype";
+import { SET_PRODUCT_CLICKED } from "./actiontype";
 export  function storeClickedItem(data,dispatch){
        dispatch({
         type:ADD,
@@ -24,6 +25,12 @@ export function AddGlobalbrandfilterstate(data,dispatch){
 export function AddGlobalgenderfilterstate(data,dispatch){
        dispatch({
               type : ADDGENDERFILTER,
+              payload : data
+       })
+}
+export function setProductClicked(data,dispatch){
+       dispatch({
+              type: SET_PRODUCT_CLICKED,
               payload : data
        })
 }

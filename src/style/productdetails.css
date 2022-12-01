@@ -1,0 +1,4 @@
+.leftside{
+    display: flex;
+    flex-direction: row;
+}

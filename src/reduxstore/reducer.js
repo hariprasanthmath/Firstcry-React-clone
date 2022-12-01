@@ -3,9 +3,11 @@ import { EDIT } from "./actiontype";
 import { ADDBRANDFILTER } from "./actiontype";
 import { AddorDeleteFilter } from "../Functions/AddorDeleteFilter";
 import { ADDGENDERFILTER } from "./actiontype";
+import { SET_PRODUCT_CLICKED } from "./actiontype";
 const initialstate = {
     productdata:[],
     cartdata :[],
+    pageclicked: {},
     brandfilter : [],
     genderfilter : [],
 }
@@ -37,6 +39,11 @@ export default function reducer(state = initialstate, action){
                 return {
                     ...state,
                     genderfilter : AddorDeleteFilter(state.genderfilter,action.payload),
+                };
+            case SET_PRODUCT_CLICKED :
+                return {
+                    ...state,
+                    pageclicked : {...action.payload}
                 }
           default :
           return state;
