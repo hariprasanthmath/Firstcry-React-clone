@@ -7,15 +7,20 @@ import Products from "./routes/products";
 import Boysclothes from "./Components/Product/Boysclothes";
 import Girlsclothes from "./Components/Product/Girlsclothes"
 import DummmyNavbar from "./development_test/dummyNavbar/DummmyNavbar"
-
+import Navbar from "./Components/Navbar/Navbar"
+import LowerNavbar from "./Components/Navbar/LowerNavbar";
+import Footer from "./Components/Footer/Footer"
+import LandingPage from "./Components/LandingPage/LandingPage";
 function App() {
   
   return (
     <div className="App">
       {/* <Router> */}
+      <Navbar/>
+      <LowerNavbar/>
       <DummmyNavbar/>
        <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<LandingPage/>}></Route>
         <Route path='/products' element={<Products/>}>
          <Route path='' element={<Navigate to="boys-clothes"/>}></Route>
          <Route path="boys-clothes" element={<Boysclothes/>}></Route>
@@ -23,6 +28,7 @@ function App() {
          
       </Route>
        </Routes>
+       <Footer/>
        {/* </Router> */}
     </div>
   );
