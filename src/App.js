@@ -1,6 +1,6 @@
 import "./App.css";
-// import LandingPage from "./Components/LandingPage/LandingPage";
-// import ImageSlider from "./Components/LandingPage/Carousel/Carousel";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import ImageSlider from "./Components/LandingPage/Carousel/Carousel";
 import { Route,Routes, Navigate } from "react-router-dom";
 import Home  from "./routes/Home"
 import Products from "./routes/products";
@@ -15,7 +15,7 @@ function App() {
       {/* <Router> */}
       <DummmyNavbar/>
        <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<LandingPage/>}></Route>
         <Route path='/products' element={<Products/>}>
          <Route path='' element={<Navigate to="boys-clothes"/>}></Route>
          <Route path="boys-clothes" element={<Boysclothes/>}></Route>
