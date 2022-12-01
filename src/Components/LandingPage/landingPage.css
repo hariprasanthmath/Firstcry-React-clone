@@ -1,0 +1,70 @@
+*{
+  font-family: sans-serif;
+  padding: none;
+  margin: none;
+}
+.mainPage {
+  background-color: #eeeeee;
+  padding-top: 20px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  scale: 1.01;
+  transition-duration: 0.4s;
+}
+.card {
+  background-color: white;
+}
+.cardDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%;
+  gap: 20px;
+  margin: 0 auto;
+  
+}
+.cardDiv img {
+  width: 100%;
+}
+.catagoryCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+.catagory:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.catagory {
+  background-color: white;
+ width: 42%;
+ padding-top: 20px;
+ padding-bottom: 20x;
+}
+.weddingImage{
+    margin-top: -4px;
+}
+.topBrand{
+  position: relative;
+  text-align: start;
+  background-color: white;
+  font-size: 25px;
+  width: 100px;
+  background-color: #f3f3f3;
+}
+.slidingBrand{
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 100px;
+}
+.scrollButton1{
+  margin-left: 95%;
+  color: white;
+  border: white;
+}
+.scrollButton2{
+  margin-left: 96%;
+
+}

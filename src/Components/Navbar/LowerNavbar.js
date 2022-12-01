@@ -31,11 +31,41 @@ function LowerNavbar() {
         </MenuList>
       </Menu>
         </Box>
+
+        <Box>
+        <Menu>
+        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+          GIRLS FASHION
+        </MenuButton>
+        <MenuList>
+        <MenuItem><Image width='60%' src="https://cdn.fcglcdn.com/brainbees/images/n/desktop_drop_down_girl_winter_271022.jpg"/>
+        </MenuItem>
+        <MenuItem>   Sweaters NEW</MenuItem>
+          <MenuItem> Thermals NEW</MenuItem>
+          <MenuItem>Ethnic Wear</MenuItem>
+          <MenuItem>Party Wear NEW</MenuItem>
+          <MenuItem>
+          Onesies & Rompers</MenuItem>
+          <MenuItem>
+          Pajamas & Leggings</MenuItem>
+          <MenuItem>
+          Nightwear</MenuItem>
+          <MenuItem>Jumpsuits & Dungarees</MenuItem>
+          <MenuItem>Athleisure & Sportswear</MenuItem>
+          <MenuItem>Shorts & Skirts</MenuItem>
+          <MenuItem> Socks & Tights</MenuItem>
+
+        </MenuList>
+      </Menu>
+        </Box>
+
+
         <Box><Menu>
         <MenuButton fontSize="15px" bg='yellow' as={Button}>
             FOOT WEAR
         </MenuButton>
         <MenuList>
+        <MenuItem><Image width='60%' src="https://cdn.fcglcdn.com/brainbees/images/n/desktop_drop_down_footwear_winter_271022.jpg"/></MenuItem>
           <MenuItem>Casual Shoes</MenuItem>
           <MenuItem>   Sandals</MenuItem>
           <MenuItem>    Booties</MenuItem>
@@ -50,7 +80,7 @@ function LowerNavbar() {
         TOYS
         </MenuButton>
         <MenuList>
-
+          <MenuItem ><Image width='60%'src="https://cdn.fcglcdn.com/brainbees/images/n/desk_menu_toy_07012021.jpg" /></MenuItem>
           <MenuItem>BOARD GAMES</MenuItem>
           <MenuItem>IQ Games</MenuItem>
           <MenuItem>Ludo, Snakes & Ladders</MenuItem>
@@ -184,7 +214,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
       <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="12px" bg='yellow' as={Button}>
           HEALTH
         </MenuButton>
         <MenuList>
@@ -202,7 +232,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
       <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="12px" bg='yellow' as={Button}>
           BOUTIQUES
         </MenuButton>
         <MenuList>
@@ -223,8 +253,23 @@ function LowerNavbar() {
 <Box  bg='yellow' fontSize="15px">
 <Image width='180%' src="https://cdn.fcglcdn.com/brainbees/images/n/club_logo.png" /></Box>
 
-       </HStack>
-       </Box>
+  
+       <Box><Menu>
+        <MenuButton fontSize="12px" bg='yellow' as={Button}>
+          CARTER'S
+        </MenuButton>
+        <MenuList>
+   <MenuItem>SHOP BY GENDER</MenuItem>
+          <MenuItem>Baby Girl (0-2 years)</MenuItem>
+          <MenuItem>Baby Boy (0-2 years)</MenuItem>
+          <MenuItem>Girl (2+ years)</MenuItem>
+          <MenuItem>Boy (2+ years)</MenuItem>
+         
+        
+        </MenuList>
+      </Menu></Box>
+      </HStack>
+      </Box>
         )
       }
 
