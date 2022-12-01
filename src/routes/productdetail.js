@@ -8,7 +8,7 @@ function Productdetail(props) {
     let clickeddata = useSelector((myStore)=> {return  myStore.pageclicked})
         let [currentProduct,setCurrentProduct] = useState(clickeddata);
         let [sideState,setSideState] = useState([]);
-
+        let [showImage,setShowImage] = useState([])
         // const getProdbox = ()=>{
         //     for(let imageindex=0;imageindex < +currentProduct.totimg;imageindex++){
         //                 setSideState(sideState.push( <div style={{width:"100px",marginTop:"10px",marginBottom:"10px"}}> <img src={currentProduct.image}></img></div>));     
@@ -31,11 +31,13 @@ function Productdetail(props) {
                     <div style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 1 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,2)}></img></div>
                     <div style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 2 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,3)}></img></div>
                     <div style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 3 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,4)}></img></div>
-                    <div style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 4 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,5)}></img></div>
                     
                 </div>
-                 <div> <img src={currentProduct.image}/></div>
-               
+                 <div> 
+                    <img src={currentProduct.image}/>
+                    
+                    </div>
+                   
                 </div>
                 <div className='rightside'>
 
