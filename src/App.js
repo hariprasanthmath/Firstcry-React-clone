@@ -7,7 +7,7 @@ import Products from "./routes/products";
 import Boysclothes from "./Components/Product/Boysclothes";
 import Girlsclothes from "./Components/Product/Girlsclothes"
 import DummmyNavbar from "./development_test/dummyNavbar/DummmyNavbar"
-
+import Productdetail from "./routes/productdetail";
 function App() {
   
   return (
@@ -22,6 +22,7 @@ function App() {
          <Route path="girls-clothes" element={<Girlsclothes/>}></Route>
          
       </Route>
+      <Route path="productdetails" element={<Productdetail/>}></Route>
        </Routes>
        {/* </Router> */}
     </div>

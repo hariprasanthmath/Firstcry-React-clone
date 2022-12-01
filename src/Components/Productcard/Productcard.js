@@ -4,13 +4,20 @@ import { productcardtheme } from './productcardtheme';
 import { clublogo } from '../../Constants/constant';
 import Extracard from './Extracard';
 import getNextImage from '../../Functions/getNextImage';
+import { setProductClicked } from '../../reduxstore/action';
+import { useDispatch } from 'react-redux';
+// import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Productcard(props) {
     
-
+    let dispatch = useDispatch();
     let [isShown,setIsShown] = useState(false);
     let [imagestate,setImagestate] = useState(props.image);
+    let navigate = useNavigate();
    const handleclick = ()=>{
-          console.log(props)
+          console.log(props);
+          setProductClicked(props,dispatch);
+          navigate("/productdetails");
    }
    
     
