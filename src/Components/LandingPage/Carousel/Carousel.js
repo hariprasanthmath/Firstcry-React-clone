@@ -8,6 +8,7 @@ function ImageSlider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          
           src="https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_rushour_wntr_desktop1667971919584.webp"
           alt="First slide"
         />
