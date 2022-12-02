@@ -2,3 +2,59 @@
     display: flex;
     flex-direction: row;
 }
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 700px;
+}
+.smallimgcontainer:Hover{
+    border: 2px solid tomato;
+}
+.leftrightcontainer{
+    display: flex;
+}
+.rightside{
+    margin-left: 40px;
+}
+.pricedetails{text-align: left;}
+.productmrp{
+    text-decoration: line-through;
+}
+.productoffer{
+    margin-left: 20px;
+    color: orangered;
+}
+.mrpinfo{
+    margin-bottom: 15px;
+    margin-top: -4px;
+    /* font-family: RobotoLR; */
+    font-size: 13px;
+    color: #616161;
+    line-height: 18px;
+}
+.clubcontainer{
+    border: 2px solid lightgrey;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.colorshow{
+    height: 15px;
+    width: 15px;
+    /* background-color: #616161; */
+    border-radius: 2px;
+    
+    margin: 2px;
+}
+.outercolorshow{
+    /* border: 2px solid red; */
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.colorbox{
+    display: flex;
+}

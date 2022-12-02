@@ -1,7 +1,7 @@
 import "./App.css";
 // import LandingPage from "./Components/LandingPage/LandingPage";
 // import ImageSlider from "./Components/LandingPage/Carousel/Carousel";
-import { Route,Routes, Navigate } from "react-router-dom";
+import { Route,Routes, Navigate, Router } from "react-router-dom";
 import Home  from "./routes/Home"
 import Products from "./routes/products";
 import Boysclothes from "./Components/Product/Boysclothes";
