@@ -1,7 +1,7 @@
 import "./App.css";
-// import LandingPage from "./Components/LandingPage/LandingPage";
-// import ImageSlider from "./Components/LandingPage/Carousel/Carousel";
-import { Route,Routes, Navigate, Router } from "react-router-dom";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import ImageSlider from "./Components/LandingPage/Carousel/Carousel";
+import { Route,Routes, Navigate } from "react-router-dom";
 import Home  from "./routes/Home"
 import Products from "./routes/products";
 import Boysclothes from "./Components/Product/Boysclothes";
@@ -11,7 +11,7 @@ import Productdetail from "./routes/productdetail";
 import Navbar from "./Components/Navbar/Navbar"
 import LowerNavbar from "./Components/Navbar/LowerNavbar";
 import Footer from "./Components/Footer/Footer"
-import LandingPage from "./Components/LandingPage/LandingPage";
+// import LandingPage from "./Components/LandingPage/LandingPage";
 function App() {
   
   return (
