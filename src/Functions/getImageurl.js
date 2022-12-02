@@ -17,5 +17,10 @@ export  const getImageurl = (url, id)=>{
             result = result + url.charAt(index);
          }
     }
+    try {
+        fetch("result").then((res)=>{console.log(res);return res}).then((out)=>{console.log(out);})
+    } catch (error) {
+        console.log(error);
+    }
     return result;
 }

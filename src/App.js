@@ -11,7 +11,7 @@ import Productdetail from "./routes/productdetail";
 import Navbar from "./Components/Navbar/Navbar"
 import LowerNavbar from "./Components/Navbar/LowerNavbar";
 import Footer from "./Components/Footer/Footer"
-import LandingPage from "./Components/LandingPage/LandingPage";
+// import LandingPage from "./Components/LandingPage/LandingPage";
 function App() {
   
   return (
