@@ -12,7 +12,7 @@ function LowerNavbar() {
       
         <Box>
         <Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button} rightIcon={<ChevronDownIcon />}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button} rightIcon={<ChevronDownIcon />}>
           ALL CATEGORIES
         </MenuButton>
         <MenuList>
@@ -34,7 +34,7 @@ function LowerNavbar() {
 
         <Box>
         <Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           GIRLS FASHION
         </MenuButton>
         <MenuList>
@@ -61,7 +61,7 @@ function LowerNavbar() {
 
 
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
             FOOT WEAR
         </MenuButton>
         <MenuList>
@@ -76,7 +76,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
         TOYS
         </MenuButton>
         <MenuList>
@@ -93,7 +93,7 @@ function LowerNavbar() {
  </MenuList>
       </Menu></Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           DIAPERING
         </MenuButton>
         <MenuList>
@@ -112,7 +112,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button} >
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button} >
           GEAR
         </MenuButton>
         <MenuList>
@@ -131,7 +131,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           FEEDING
         </MenuButton>
         <MenuList>
@@ -152,7 +152,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           BATH
         </MenuButton>
         <MenuList>
@@ -171,7 +171,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           NURSERY
         </MenuButton>
         <MenuList>
@@ -192,7 +192,7 @@ function LowerNavbar() {
         
         </Box>
         <Box><Menu>
-        <MenuButton fontSize="15px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           MOMS
         </MenuButton>
         <MenuList>
@@ -214,7 +214,7 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
       <Box><Menu>
-        <MenuButton fontSize="12px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           HEALTH
         </MenuButton>
         <MenuList>
@@ -232,7 +232,8 @@ function LowerNavbar() {
         </MenuList>
       </Menu></Box>
       <Box><Menu>
-        <MenuButton fontSize="12px" bg='yellow' as={Button}>
+
+<MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           BOUTIQUES
         </MenuButton>
         <MenuList>
@@ -250,12 +251,12 @@ function LowerNavbar() {
         
         </MenuList>
       </Menu></Box>
-<Box  bg='yellow' fontSize="15px">
+<Box  bg='rgb(254,221,0)' fontSize="15px">
 <Image width='180%' src="https://cdn.fcglcdn.com/brainbees/images/n/club_logo.png" /></Box>
 
   
        <Box><Menu>
-        <MenuButton fontSize="12px" bg='yellow' as={Button}>
+        <MenuButton fontSize="15px" bg='rgb(254,221,0)' as={Button}>
           CARTER'S
         </MenuButton>
         <MenuList>
