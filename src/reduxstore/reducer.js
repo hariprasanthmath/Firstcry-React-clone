@@ -4,12 +4,17 @@ import { ADDBRANDFILTER } from "./actiontype";
 import { AddorDeleteFilter } from "../Functions/AddorDeleteFilter";
 import { ADDGENDERFILTER } from "./actiontype";
 import { SET_PRODUCT_CLICKED } from "./actiontype";
+import { SET_ADDRESS, DECREASEPRODUCTCOUNT, DELETECARTPRODUCT, INCREASECARTPRODUCTCOUNT, ADDUSER, LOGIN, LOGOUT } from "./actiontype";
 const initialstate = {
     productdata:[],
     cartdata :[],
     pageclicked: {},
     brandfilter : [],
     genderfilter : [],
+    userAddress : {},
+    registeredUsers : [],
+    isAuth : false,
+    currentUser : {}
 }
 
 export default function reducer(state = initialstate, action){
@@ -44,7 +49,59 @@ export default function reducer(state = initialstate, action){
                 return {
                     ...state,
                     pageclicked : {...action.payload}
-                }
+                };
+            case SET_ADDRESS : 
+            return {
+                ...state,
+                userAddress : {...action.payload}
+            };
+            case DECREASEPRODUCTCOUNT :
+                return {
+                    ...state,
+                    cartdata : state.cartdata.map((eachProduct)=>{
+                        if(eachProduct.productDetails.id === action.payload.id){
+                            eachProduct.count = eachProduct.count - 1;
+                        }
+                        return eachProduct;
+                    })
+                };
+            case DELETECARTPRODUCT : 
+               return {
+                 ...state,
+                 cartdata : state.cartdata.filter((eachProduct)=>{
+                    if(eachProduct.productDetails.id != action.payload){
+                          return eachProduct;
+                    }
+                 })
+               };
+            case INCREASECARTPRODUCTCOUNT :
+                return {
+                    ...state,
+                    cartdata : state.cartdata.map((eachProduct)=>{
+                        if(eachProduct.productDetails.id == action.payload){
+                            eachProduct.count = eachProduct.count + 1;
+                        }
+                        return eachProduct;
+                    })
+                };
+            case ADDUSER : 
+            return {
+                ...state,
+                registeredUsers : [...state.registeredUsers, action.payload]
+            };
+            case LOGIN : 
+            return {
+                ...state,
+                isAuth : true,
+                currentUser : action.payload
+            };
+            case LOGOUT : 
+            return {
+                ...state,
+                isAuth : false,
+                currentUser : {}
+            }
+
           default :
           return state;
     }

@@ -25,10 +25,11 @@ function Productcard(props) {
         
             <div className='productInside'
                key={props.id}
-               onClick={()=>handleclick(props)}
+              
                onMouseEnter={()=>{setIsShown(true);setImagestate(getNextImage(props.image))}}
                onMouseLeave={()=>{setIsShown(false);setImagestate(props.image)}}
            style={isShown? productcardtheme.maincardisShown : productcardtheme.maincard }>
+            <div  onClick={()=>handleclick(props)}>
             <img style={productcardtheme.prodimg} src={imagestate} alt="prodimage" />
             {!isShown && (
                 <div>
@@ -38,6 +39,7 @@ function Productcard(props) {
             <div style={productcardtheme.title}><p>Get it by {"Monday"}</p></div>
                 </div>
             ) }
+            </div>
             {isShown && (
               <Extracard {...props}/>
       )}

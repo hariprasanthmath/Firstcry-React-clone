@@ -1,0 +1,196 @@
+.container{
+
+    background-color: antiquewhite;
+     height: 65px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+   
+    margin-bottom: -17px;
+    position: sticky;
+    top: 0;
+   
+ }
+ .left{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
+    
+ }
+ 
+ .searchcontainer{
+     border: 1px solid grey;
+     background-color: white;
+     width: 300px;
+     padding: 7px;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 5px;
+ }
+ .searchcontainer input{
+     color: gray;
+     border: none;
+     background-color: white;
+     width: 250px;
+     outline: none;
+ }
+ .searchicon{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4px;
+   color: #616161;
+   font-size: 13px;
+   font-weight: 400;
+   cursor: pointer;
+ }
+ 
+ .selectLocation{
+         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .loactionicon{
+    font-size: 20px;
+ }
+ .lati{
+     color: #575757;
+ }
+ .shortlist{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 3px;
+ 
+ }
+ .loginOther{
+ 
+     display: flex;
+     gap: 5px;
+ }
+ .cart{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2px;
+ 
+ }
+ .childcartdiv{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+ }
+ .childcartdiv h3{
+     margin-top: 0px;
+     margin-bottom: -11px;
+     color: #FF7043;
+     font-size: 18px;
+     font-weight: bold;
+ }
+ .cart span{
+     font-weight: bold;
+     font-size: 16px;
+    
+ }
+ 
+ .carticon{
+       font-size: 40px;
+       font-weight: bold;
+       color: #616161;
+ }
+ .hambarger{
+     display: none;
+ }
+ .menu{
+     display: none;
+ }
+
+ @media only screen and (max-width: 600px) {
+
+    .container{
+
+        background-color: antiquewhite;
+         height: 65px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+        padding-left: 40px;
+        padding-right: 50px;
+       
+        margin-bottom: -17px;
+        position: sticky;
+        top: 0;
+       
+     }
+     .left{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 5px;
+        
+     }  
+     .searchcontainer{
+         
+        display: none;
+     }
+     
+     .right{
+      
+        display: none;
+     }
+     
+     .hambarger{
+        display: block;
+    }
+    .menu{
+        display: block;
+         height: 400px;
+         z-index: 1;
+         width: 100%;
+         top: 14px;
+         position: sticky;
+         background-color: rgb(241, 223, 199);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         font-size: 20px;
+         font-weight: 500;
+         color: rgb(98, 75, 75);
+    }
+    .selectLocation{
+       margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .loginOther{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .shortlist{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .cart span{
+        font-size: 20px;
+         font-weight: 500;
+    }
+    .carticon{
+        font-size: 50px;
+    }
+ .childcartdiv h3{
+    font-size: 20px;
+ }
+   
+ }

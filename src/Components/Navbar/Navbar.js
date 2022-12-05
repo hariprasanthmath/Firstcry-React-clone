@@ -8,7 +8,7 @@ import {AiOutlineSearch} from 'react-icons/ai'
 
 function Navbar() {
     return (
-        <Box>
+        <Box bg='#ffffff'>
         <HStack >
         <Box>
         <Heading><img src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png"/></Heading></Box>

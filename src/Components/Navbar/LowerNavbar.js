@@ -7,7 +7,7 @@ import {SlHandbag} from 'react-icons/sl'
 
 function LowerNavbar() {
     return (
-        <Box>
+        <Box bg='rgb(254,221,0)'>
         <HStack >
       
         <Box>
