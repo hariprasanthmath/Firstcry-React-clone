@@ -4,13 +4,14 @@ import { ADDBRANDFILTER } from "./actiontype";
 import { AddorDeleteFilter } from "../Functions/AddorDeleteFilter";
 import { ADDGENDERFILTER } from "./actiontype";
 import { SET_PRODUCT_CLICKED } from "./actiontype";
-import { SET_ADDRESS, DECREASEPRODUCTCOUNT, DELETECARTPRODUCT, INCREASECARTPRODUCTCOUNT, ADDUSER, LOGIN, LOGOUT } from "./actiontype";
+import { SET_ADDRESS, DECREASEPRODUCTCOUNT, DELETECARTPRODUCT, INCREASECARTPRODUCTCOUNT, ADDUSER, LOGIN, LOGOUT, PERCENTFILTER } from "./actiontype";
 const initialstate = {
     productdata:[],
     cartdata :[],
     pageclicked: {},
     brandfilter : [],
     genderfilter : [],
+    percentfilter : [],
     userAddress : {},
     registeredUsers : [],
     isAuth : false,
@@ -45,6 +46,11 @@ export default function reducer(state = initialstate, action){
                     ...state,
                     genderfilter : AddorDeleteFilter(state.genderfilter,action.payload),
                 };
+            case PERCENTFILTER : 
+                 return {
+                 ...state,
+                percentfilter : AddorDeleteFilter(state.percentfilter,action.payload)
+                 };
             case SET_PRODUCT_CLICKED :
                 return {
                     ...state,

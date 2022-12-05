@@ -29,7 +29,7 @@ function App() {
       {/* <Navbar/> */}
       <Extranavbar/>
       <LowerNavbar/>
-      <DummmyNavbar/>
+      {/* <DummmyNavbar/> */}
       {/* <NewNavbar/> */}
        <Routes>
           <Route path="/" element={<LandingPage/>}></Route>

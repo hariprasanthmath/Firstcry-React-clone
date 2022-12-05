@@ -176,7 +176,7 @@ function LandingPage() {
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/1920_175_desktop_heavywear_281022_04.jpg"
             alt=""
           />
-          <div className="flex">
+          <div style={{display:"flex",justifyContent:"center"}}>
             <img
               width="159px"
               src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_heavywinter_281022_05.jpg"
@@ -224,7 +224,7 @@ function LandingPage() {
             alt=""
           />
           {/* End of Winter Essential */}
-          <div className="flex">
+          <div style={{display:"flex",justifyContent:"center"}}>
             <img
               width="254.4px"
               src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_heavywinter_281022_14.jpg"
@@ -435,7 +435,7 @@ function LandingPage() {
           alt=""
         />
         {/* .....The Out Wear Edit... */}
-        <div className="flex">
+        <div style={{display:"flex",justifyContent:"center"}}>
           <img
             width="254.4px"
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_heavywinter_281022_20.jpg"
@@ -469,7 +469,7 @@ function LandingPage() {
           alt=""
         />
         {/* ....Esential For This session... */}
-        <div className="flex">
+        <div style={{display:"flex",justifyContent:"center"}}>
           <img
             width="212px"
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_heavywinter_281022_25.jpg"
@@ -513,7 +513,7 @@ function LandingPage() {
           src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_02.jpg"
           alt=""
         />
-        <div className="flex">
+        <div style={{display:"flex",justifyContent:"center"}}>
           <img
             width="182px"
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_03.jpg"
@@ -556,7 +556,7 @@ function LandingPage() {
           src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_10.jpg"
           alt=""
         />
-        <div className="flex">
+        <div style={{display:"flex",justifyContent:"center"}}>
           <img
             width="182px"
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_11.jpg"
@@ -600,7 +600,7 @@ function LandingPage() {
           alt=""
         />
         {/* ....Feeding Kid's Food.... */}
-        <div className="flex">
+        <div style={{display:"flex",justifyContent:"center"}}>
           <img
             width="159px"
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_02.jpg"
@@ -643,7 +643,7 @@ function LandingPage() {
           />
         </div>
         {/* ....End Of Feeding Kid's Food.... */}
-        <div className="flex">
+        <div style={{display:"flex",justifyContent:"center"}}>
           <img
             width="159px"
             src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_10.jpg"

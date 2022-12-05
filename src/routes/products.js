@@ -5,7 +5,7 @@ import {Outlet} from 'react-router-dom'
 import "../style/productlistpage.css"
 function Products(props) {
     return (
-        <div className='productandfiltercontainer'>
+        <div className='productandfiltercontainer' style={{marginTop:"50px"}}>
            <FilterContainer/>
            <div><Outlet/></div>
         </div>

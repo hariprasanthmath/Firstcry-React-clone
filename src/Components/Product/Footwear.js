@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import { myStore } from '../../reduxstore/store';
 import { brandproductrenderfilter } from '../../Functions/Brandproductrenderfilter';
 import { genderproductrenderfilter } from '../../Functions/Genderrproductrenderfilter';
-
+import { percentproductrenderfilter } from '../../Functions/percentproductrenderfilter';
 function Footwear(props) {
     let [product,setProduct] = useState([]);
     async function callerFunction(){
@@ -21,11 +21,14 @@ function Footwear(props) {
     let [finalrender,setFinalrender] = useState([product]);
     const brandfilter = useSelector((myStore)=>{return myStore.brandfilter}); 
     const genderfilter = useSelector((myStore)=>{return myStore.genderfilter}); 
+    const percentfilter = useSelector((myStore)=>{return myStore.percentfilter}); 
     useEffect(()=>{
         let arrayafterbrandfiltered = brandproductrenderfilter(brandfilter, product);
+       
         let arrayaftergenderfiltered = genderproductrenderfilter(genderfilter, arrayafterbrandfiltered);
-        setFinalrender(arrayaftergenderfiltered);
-    },[brandfilter,genderfilter])
+        let arrayafterpercentfiltered = percentproductrenderfilter(percentfilter, arrayaftergenderfiltered);
+        setFinalrender(arrayafterpercentfiltered);
+    },[brandfilter,genderfilter, percentfilter ])
  
  //    once the page loads the data is fetched from JSON server 
  //    callerFunction calls the getdata function with respective url

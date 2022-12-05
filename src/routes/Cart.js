@@ -34,6 +34,7 @@ function Cart(props) {
     let cardNumber = useRef();
     let cvv = useRef();
     let card = useRef();
+    let otpRef = useRef();
     let navigatehandle = ()=>{
         console.log("navigating")
         // navigate("/payment");
@@ -80,7 +81,7 @@ function Cart(props) {
         
     }
     let [gotinput, setInput] = useState(false);
-
+    let [otpstate,setOtp] = useState("");
     let handlecartincrease = (id)=>{
            increasecartproductcount(id,dispatch);
     }
@@ -99,7 +100,13 @@ function Cart(props) {
          console.log(obj);
         setInput(true);
       }else if("otp"){
-        navigate("/success");
+        if(otpstate == 1234){
+          alert("success");
+          navigate("/success");
+        }else{
+          alert("wrong otp")
+        }
+        
       }
       
     }
@@ -173,9 +180,9 @@ function Cart(props) {
                   </div>
             </div>
             <>
-      <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
+      {/* <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
         Open
-      </Button>
+      </Button> */}
       <Drawer
         isOpen={isOpen}
         placement='right'
@@ -191,7 +198,7 @@ function Cart(props) {
 
           <DrawerBody>
             {
-              gotinput ? <Input placeholder='OTP' /> : <>
+              gotinput ? <Input placeholder='OTP' ref={otpRef} value={otpstate} onChange={(e)=>{setOtp(e.target.value)}}/> : <>
               <Input placeholder='CARD NUMBER' ref={cardNumber}/>
             <Input style={{marginTop:"20px"}} placeholder='CVV' ref={cvv} />
             <Input style={{marginTop:"20px"}} placeholder='CARD HOLDER NAME' ref={card} />

@@ -1,7 +1,9 @@
 .leftside{
     display: flex;
-    flex-direction: row;
-    flex-grow: 2;
+    margin-right: 100px;
+    /* width: 700px; */
+    /* flex-direction: row; */
+    /* background-color: #00325f; */
 }
 .productInfo{
     display: flex;
@@ -14,10 +16,12 @@
 }
 .leftrightcontainer{
     display: flex;
+    /* width: 600px; */
 }
 .rightside{
     margin-left: 40px;
-    flex-grow: 1;
+    max-width: 600px;
+    /* flex-grow: 1; */
 }
 .pricedetails{text-align: left;}
 .productmrp{
@@ -104,4 +108,15 @@
     line-height: 20px;
     margin-top: -10px;
     /* font-weight: 700; */
+}
+.leftrightcontainer{
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+}
+.mdallimgcontainer:hover{
+    border: 2px solid tomato;
 }

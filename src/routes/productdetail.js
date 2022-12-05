@@ -53,23 +53,21 @@ function Productdetail(props) {
 
     return (
         <div>
-            <div style={{width:"80%",margin:"auto"}} className="leftrightcontainer"> 
+            <div className="leftrightcontainer"> 
                 <div className='leftside'>
-                <div style={{marginRight:"20px"}}>
-                    {/* {sideState?.forEach((element)=>{
-                        return element;
-                    })} */}
+                <div style={{display: "flex",flexDirection:"row",justifyContent:"space-evenly"}}>
+                   
                     <div className='mdallimgcontainer' style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 0 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,1)} onMouseOver={()=>{setShowImage(getImageurl(currentProduct.image,1))}}></img></div>
                     <div className='mdallimgcontainer' style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 1 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,2)} onMouseOver={()=>{setShowImage(getImageurl(currentProduct.image,2))}}></img></div>
                     <div className='mdallimgcontainer' style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 2 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,3)} onMouseOver={()=>{setShowImage(getImageurl(currentProduct.image,3))}}></img></div>
                     <div className='mdallimgcontainer' style={{width:"100px",marginTop:"10px",marginBottom:"10px",display:+currentProduct.totimg > 3 ? "flex": "none"}}> <img src={getImageurl(currentProduct.image,4)} onMouseOver={()=>{setShowImage(getImageurl(currentProduct.image,4))}}></img></div>
-                    
+                   
                 </div>
-                 <div style={{minWidth:"200px"}}> 
-                    <img src={showImage}/>
+                 <div  style={{margin:"0px 30px "}}> 
+                    <img src={showImage} />
                     <div className='buttongroup'>
                     <Button colorScheme='orange' size='lg' onClick={handleclick}>Add to cart</Button>
-                   <Button colorScheme='gray' variant='outline' size='lg'>Shortlist</Button>
+                    <Button colorScheme='gray' variant='outline' size='lg'>Shortlist</Button>
                     </div>
                 </div>
                    

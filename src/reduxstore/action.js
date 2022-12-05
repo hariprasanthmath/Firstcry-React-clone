@@ -3,7 +3,7 @@ import { EDIT } from "./actiontype";
 import { ADDBRANDFILTER } from "./actiontype";
 import { ADDGENDERFILTER } from "./actiontype";
 import { SET_PRODUCT_CLICKED } from "./actiontype";
-import { SET_ADDRESS, DECREASEPRODUCTCOUNT, DELETECARTPRODUCT, INCREASECARTPRODUCTCOUNT, ADDUSER, LOGOUT } from "./actiontype";
+import { SET_ADDRESS, DECREASEPRODUCTCOUNT, DELETECARTPRODUCT, INCREASECARTPRODUCTCOUNT, ADDUSER, LOGOUT, PERCENTFILTER } from "./actiontype";
 
 export  function storeClickedItem(data,dispatch){
        dispatch({
@@ -27,6 +27,12 @@ export function AddGlobalbrandfilterstate(data,dispatch){
 export function AddGlobalgenderfilterstate(data,dispatch){
        dispatch({
               type : ADDGENDERFILTER,
+              payload : data
+       })
+}
+export function AddGlobalPercentFilter(data,dispatch){
+       dispatch({
+              type : PERCENTFILTER,
               payload : data
        })
 }
@@ -72,7 +78,7 @@ export function userLoginSet(data,dispatch){
               payload : data
        })
 }
-export function userLogoutSet(data,dispatch){
+export function userLogoutSet(dispatch){
        dispatch({
               type: LOGOUT
               
