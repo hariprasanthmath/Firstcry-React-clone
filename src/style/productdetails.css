@@ -1,6 +1,9 @@
 .leftside{
     display: flex;
-    flex-direction: row;
+    margin-right: 100px;
+    /* width: 700px; */
+    /* flex-direction: row; */
+    /* background-color: #00325f; */
 }
 .productInfo{
     display: flex;
@@ -13,13 +16,24 @@
 }
 .leftrightcontainer{
     display: flex;
+    /* width: 600px; */
 }
 .rightside{
     margin-left: 40px;
+    max-width: 600px;
+    /* flex-grow: 1; */
 }
 .pricedetails{text-align: left;}
 .productmrp{
     text-decoration: line-through;
+
+}
+.productprice{
+    font-size: 20px;
+    color: #00325f;
+    line-height: 28px;
+    margin-right: 10px;
+    font-weight: bolder;
 }
 .productoffer{
     margin-left: 20px;
@@ -57,4 +71,52 @@
 }
 .colorbox{
     display: flex;
+    margin-top: 35px;
+}
+.offerscontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20PX;
+}
+.offerscontainer > div > img{ margin: auto;}
+.Extradetails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Extradetails > div{
+    margin: 20px;
+}
+.buttongroup{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.producttitle{
+    
+    font-size: 20px;
+    /* color: #424242; */
+    color:black;
+    line-height: 28px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight:500;
+}
+
+.productdescription{
+    /* font-size: 14px; */
+    color: #b4b4b4;
+    line-height: 20px;
+    margin-top: -10px;
+    /* font-weight: 700; */
+}
+.leftrightcontainer{
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+}
+.mdallimgcontainer:hover{
+    border: 2px solid tomato;
 }

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import getdata from '../../Functions/getData';
-import { Girlkids } from '../../Constants/constant';
+import { Footwearurl } from '../../Constants/constant';
 import Productcard from '../Productcard/Productcard';
 import "../../style/productlistpage.css"
 import { useSelector } from 'react-redux';
@@ -9,11 +9,10 @@ import { myStore } from '../../reduxstore/store';
 import { brandproductrenderfilter } from '../../Functions/Brandproductrenderfilter';
 import { genderproductrenderfilter } from '../../Functions/Genderrproductrenderfilter';
 import { percentproductrenderfilter } from '../../Functions/percentproductrenderfilter';
-function Girlsclothes(props) {
-
+function Footwear(props) {
     let [product,setProduct] = useState([]);
     async function callerFunction(){
-        let data = await getdata(Girlkids);
+        let data = await getdata(Footwearurl);
          console.log(data);
          setProduct(data);
          setFinalrender(data);
@@ -25,18 +24,17 @@ function Girlsclothes(props) {
     const percentfilter = useSelector((myStore)=>{return myStore.percentfilter}); 
     useEffect(()=>{
         let arrayafterbrandfiltered = brandproductrenderfilter(brandfilter, product);
+       
         let arrayaftergenderfiltered = genderproductrenderfilter(genderfilter, arrayafterbrandfiltered);
         let arrayafterpercentfiltered = percentproductrenderfilter(percentfilter, arrayaftergenderfiltered);
         setFinalrender(arrayafterpercentfiltered);
-    },[brandfilter,genderfilter, percentfilter])
+    },[brandfilter,genderfilter, percentfilter ])
  
  //    once the page loads the data is fetched from JSON server 
  //    callerFunction calls the getdata function with respective url
     useEffect(()=>{
      callerFunction();
     },[])
- 
-
     return (
         <div className='productshow'>
         {/* All product elements are looped through the product array */}
@@ -46,4 +44,4 @@ function Girlsclothes(props) {
     );
 }
 
-export default Girlsclothes;
+export default Footwear;

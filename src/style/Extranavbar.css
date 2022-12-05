@@ -1,0 +1,22 @@
+.allcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-height: 50px;
+    padding: 10px 0px;
+    width: 80%;
+    margin: auto;
+}
+.leftsidecontnav{
+    display: flex;
+    flex-direction: row;
+}
+.rightsidecontnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.rightsidecontnav > p {
+    margin-right: 10px;
+}
