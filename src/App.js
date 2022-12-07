@@ -16,7 +16,7 @@ import NewNavbar from "./development_test/dummyNavbar/test/NewNavbar";
 import Extranavbar from "./Components/Navbar/Extranavbar";
 import Footwear from "./Components/Product/Footwear";
 import Cart from "./routes/Cart";
-import Payment from "./routes/payment";
+// import Payment from "./routes/payment";
 import Checkout from "./Components/checkout/Checkout"
 
 import Login from "./Components/Login1/Login1/Login";
@@ -42,7 +42,7 @@ function App() {
       </Route>
       <Route path="productdetails" element={<Productdetail/>}></Route>
       <Route path="cart" element={<Cart/>}></Route>
-      <Route path="payment" element={<Payment/>}></Route>
+      {/* <Route path="payment" element={<Payment/>}></Route> */}
       <Route path="success" element={<Checkout/>}></Route>
       <Route path="login" element={<Login/>}></Route>
       <Route path="signup" element={<SignUp/>}></Route>

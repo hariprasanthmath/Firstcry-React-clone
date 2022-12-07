@@ -1,6 +1,7 @@
-export const  Menkids = "http://localhost:3001/MenKids";
-export const  Girlkids = "http://localhost:3001/GirlKids";
-export const Footwearurl = "http://localhost:3001/Footwear";
+const host = "https://firstcrymockserver2.onrender.com"
+export const  Menkids =  host + "/MenKids";
+export const  Girlkids =  host + "/GirlKids";
+export const Footwearurl = host + "/Footwear";
 export const clublogo = "https://cdn.fcglcdn.com/brainbees/images/club_flag_listing_desktop.png";
 export const clublogobig = "https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg";
 export const Exclusiveoffer = "https://cdn.fcglcdn.com/brainbees/images/club_member.webp";
