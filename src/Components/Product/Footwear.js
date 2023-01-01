@@ -6,6 +6,7 @@ import Productcard from '../Productcard/Productcard';
 import "../../style/productlistpage.css"
 import { useSelector } from 'react-redux';
 import { myStore } from '../../reduxstore/store';
+import Spinnercomp from './Spinnercomp';
 import { brandproductrenderfilter } from '../../Functions/Brandproductrenderfilter';
 import { genderproductrenderfilter } from '../../Functions/Genderrproductrenderfilter';
 import { percentproductrenderfilter } from '../../Functions/percentproductrenderfilter';
@@ -36,9 +37,9 @@ function Footwear(props) {
      callerFunction();
     },[])
     return (
-        <div className='productshow'>
+        <div className={finalrender.length > 0 ? 'productshow' : "loaderorskeleton"} >
         {/* All product elements are looped through the product array */}
-        {finalrender.length > 0 ? finalrender.map((Product_elem)=>{return <Productcard {...Product_elem} Key={Product_elem.id}/>}):<p>Empty</p>}
+        {finalrender.length > 0 ? finalrender.map((Product_elem)=>{return <Productcard {...Product_elem} Key={Product_elem.id}/>}):<Spinnercomp/>}
 
     </div>
     );
